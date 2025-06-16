@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Água para Todos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #1e3a5f;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1e3a5f;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #cceeff, #e0f7fa);
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .hero h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .hero button {
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .funcionalidades {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .formulario {
+      background-color: #e6f2ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .botao {
+      background-color: #0044cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #d0eaff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Água para Todos</h2>
+    <nav>
+      <a href="#solucao">Solução</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#publico">Público-Alvo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Juntos por um futuro com saneamento para todos!</h1>
+    <p>Conheça nosso projeto e participe da transformação.</p>
+    <button>Quero saber mais</button>
+  </div>
+
+  <section id="solucao">
+    <h2>Solução</h2>
+    <p>Uma aplicação web que mapeia áreas com deficiência em saneamento básico e conecta moradores, ONGs e órgãos públicos para ações de melhoria, denúncias e campanhas educativas.</p>
+  </section>
+
+  <section id="funcionalidades">
+    <h2>Funcionalidades</h2>
+    <div class="funcionalidades">
+      <div class="card">Cadastro de denúncias</div>
+      <div class="card">Consulta de dados</div>
+      <div class="card">Campanhas educativas</div>
+      <div class="card">Contato com órgãos parceiros</div>
+    </div>
+  </section>
+
+  <section id="publico">
+    <h2>Público-Alvo</h2>
+    <ul>
+      <li>Moradores de áreas com saneamento precário</li>
+      <li>Alunos e professores de escolas públicas</li>
+      <li>ONGs e órgãos governamentais</li>
+    </ul>
+  </section>
+
+  <section id="contato" class="formulario">
+    <h2>Participe do projeto</h2>
+    <form>
+      <input type="text" placeholder="Nome">
+      <input type="email" placeholder="E-mail">
+      <input type="text" placeholder="Cidade">
+      <button class="botao">Quero participar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contato: contato@aguaparatodos.org | Instagram: @aguaparatodos</p>
+  </footer>
+</body>
+</html>
