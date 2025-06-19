@@ -54,7 +54,7 @@
       cursor: pointer;
     }
     .hero-imagem img {
-      margin-right: 20px;
+      margin-right: 100px;
       width: 650px;
       height: auto;
       border-radius: 15px;
@@ -71,6 +71,7 @@
       flex-wrap: wrap;
     }
     .solucao-texto {
+     margin-right: 30px;
       margin-bottom: 150px;
       font-size: 18px;
       flex: 1;
@@ -172,9 +173,11 @@
       <p style="margin-left: 20px; margin-top: 20px;">Conheça nosso projeto e participe da transformação.</p>
       <button style="margin-left: 90px ; margin-top: 30px; padding: 20px 40px;">Quero saber mais</button>
     </div>
+
     <div class="hero-imagem">
-      <img src="https://www.cidadenova.org.br/media/filter/mediateca_8-SQR/img/559bd1d8061bf5.18780399.jpg" alt="Crianças em situação de vulnerabilidade">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8Jt9kFF5yMnykvX351fKJ14VJOVwlNRM7rEFAvp4IWgOGwav5NtwbdLQNAw19bo878g&usqp=CAU" alt="Crianças em situação de vulnerabilidade">
     </div>
+
   </div>
 
   <section id="solucao">
@@ -194,11 +197,12 @@
         <p>
           Com isso, buscamos promover justiça social, saúde e qualidade de vida, democratizando o acesso à informação e à participação cidadã na busca por um ambiente mais digno e limpo para todos.
         </p>
-     
       </div>
+
       <div class="solucao-imagem">
         <img src="https://img.freepik.com/vetores-gratis/comunicacao-na-internet-com-pessoas-da-comunidade_24877-58869.jpg?ga=GA1.1.1705460373.1750292963&semt=ais_hybrid&w=740" alt="Família com acesso a água encanada">
       </div>
+      
     </div>
   </section>
 
@@ -239,7 +243,7 @@
       <button class="botao">Quero participar</button>
     </form>
     <section id="publico">
-      <h2" style="font-size: 30px; font-family: Arial, sans-serif;">Público-Alvo</h2>
+      <h2 style="font-size: 30px; font-family: Arial, sans-serif;">Público-Alvo</h2>
       <ul>
         <li style="font-size: 25px;">Moradores de áreas com saneamento precário</li>
         <li style="font-size: 25px;">Alunos e professores de escolas públicas</li>
@@ -253,4 +257,3 @@
   </footer>
 </body>
 </html>
-
