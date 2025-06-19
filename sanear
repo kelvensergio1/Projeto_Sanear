@@ -20,15 +20,25 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     nav a {
+      font-size: 20px;
+      padding: 15px;
       margin-left: 20px;
       text-decoration: none;
       color: #1e3a5f;
       font-weight: bold;
     }
     .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       background: linear-gradient(to right, #cceeff, #e0f7fa);
-      text-align: center;
       padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+    .hero-texto {
+      flex: 1;
+      min-width: 250px;
+      padding-right: 20px;
     }
     .hero h1 {
       font-size: 2em;
@@ -43,26 +53,77 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    .hero-imagem img {
+      margin-right: 20px;
+      width: 650px;
+      height: auto;
+      border-radius: 15px;
+    }
     section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1250px;
       margin: auto;
+    }
+    .solucao-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .solucao-texto {
+      margin-bottom: 150px;
+      font-size: 18px;
+      flex: 1;
+      min-width: 250px;
+    }
+    .solucao-imagem img {
+      width: 500px;
+      height: 410px;
+      border-radius: 40px;
+      margin-bottom: 150px;
     }
     .funcionalidades {
       display: flex;
+      margin-top: 40px;
+      margin-left: -20px;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content:center;
       gap: 20px;
     }
-    .card {
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      flex: 1 1 200px;
-      text-align: center;
+    .item-func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.item-func img {
+  width: 160px;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.item-func img:hover {
+  transform: scale(1.1);
+}
+ 
+.card {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+    .card:hover {
+      transform: translateY(-5px);
     }
     .formulario {
+      margin-top: 40px;
+      width: 500px;
+      height: 500px;
       background-color: #e6f2ff;
       padding: 20px;
       border-radius: 10px;
@@ -72,7 +133,7 @@
       flex-direction: column;
     }
     input {
-      padding: 10px;
+      padding: 10px ;
       margin-bottom: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -80,7 +141,7 @@
     .botao {
       background-color: #0044cc;
       color: white;
-      padding: 10px;
+      padding: 15px 30px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -94,8 +155,9 @@
   </style>
 </head>
 <body>
+
   <header>
-    <h2>Água para Todos</h2>
+    <h2 style="font-size: 27px ;margin-left: 15px">Água para Todos</h2>
     <nav>
       <a href="#solucao">Solução</a>
       <a href="#funcionalidades">Funcionalidades</a>
@@ -105,34 +167,68 @@
   </header>
 
   <div class="hero">
-    <h1>Juntos por um futuro com saneamento para todos!</h1>
-    <p>Conheça nosso projeto e participe da transformação.</p>
-    <button>Quero saber mais</button>
+    <div class="hero-texto">
+      <h1 style="max-width: 500px;font-size: 60px; margin-left: 20px;">Juntos por um futuro com saneamento para todos!</h1>
+      <p style="margin-left: 20px; margin-top: 20px;">Conheça nosso projeto e participe da transformação.</p>
+      <button style="margin-left: 90px ; margin-top: 30px; padding: 20px 40px;">Quero saber mais</button>
+    </div>
+    <div class="hero-imagem">
+      <img src="https://www.cidadenova.org.br/media/filter/mediateca_8-SQR/img/559bd1d8061bf5.18780399.jpg" alt="Crianças em situação de vulnerabilidade">
+    </div>
   </div>
 
   <section id="solucao">
-    <h2>Solução</h2>
-    <p>Uma aplicação web que mapeia áreas com deficiência em saneamento básico e conecta moradores, ONGs e órgãos públicos para ações de melhoria, denúncias e campanhas educativas.</p>
-  </section>
-
-  <section id="funcionalidades">
-    <h2>Funcionalidades</h2>
-    <div class="funcionalidades">
-      <div class="card">Cadastro de denúncias</div>
-      <div class="card">Consulta de dados</div>
-      <div class="card">Campanhas educativas</div>
-      <div class="card">Contato com órgãos parceiros</div>
+    <h2 style="font-size: 35px; margin-left: 20px; margin-bottom: 40px;">Solução</h2>
+    <div class="solucao-container">
+      <div class="solucao-texto">
+        <p>
+          A proposta do projeto <strong>“Água para Todos”</strong> é desenvolver uma aplicação web que funcione como uma ponte entre a comunidade e os responsáveis por políticas de saneamento básico. 
+          A plataforma permitirá que moradores denunciem problemas como esgoto a céu aberto, falta de água encanada ou descarte irregular de lixo de forma rápida e acessível.
+        </p>
+        <p>
+          Além disso, a aplicação fornecerá acesso a dados atualizados sobre a situação do saneamento em diferentes regiões, com gráficos e informações úteis para ajudar na conscientização e na cobrança por melhorias.
+        </p>
+        <p>
+          Outro pilar do projeto são as <strong>campanhas educativas</strong>, que serão divulgadas diretamente pela plataforma, com foco em orientar a população sobre higiene, preservação da água e sustentabilidade. A ferramenta também facilitará o contato direto com <strong>órgãos públicos e ONGs parceiras</strong> que atuam na área.
+        </p>
+        <p>
+          Com isso, buscamos promover justiça social, saúde e qualidade de vida, democratizando o acesso à informação e à participação cidadã na busca por um ambiente mais digno e limpo para todos.
+        </p>
+     
+      </div>
+      <div class="solucao-imagem">
+        <img src="https://img.freepik.com/vetores-gratis/comunicacao-na-internet-com-pessoas-da-comunidade_24877-58869.jpg?ga=GA1.1.1705460373.1750292963&semt=ais_hybrid&w=740" alt="Família com acesso a água encanada">
+      </div>
     </div>
   </section>
 
-  <section id="publico">
-    <h2>Público-Alvo</h2>
-    <ul>
-      <li>Moradores de áreas com saneamento precário</li>
-      <li>Alunos e professores de escolas públicas</li>
-      <li>ONGs e órgãos governamentais</li>
-    </ul>
+  <section id="funcionalidades">
+    <h2 style="margin-top: -80px;font-size: 35px; margin-left: 20px;">Funcionalidades</h2>
+    <div class="funcionalidades">
+    
+      <div class="item-func">
+        <img src="https://www.mpc.sc.gov.br/wp-content/uploads/2019/12/ouvidoria-denuncia.png" alt="Cadastro de denúncias" style="margin-top: 20px; margin-bottom: 40px; width: 130px; height: auto;">
+        <div class="card">Cadastro de denúncias</div>
+      </div>
+  
+      <div class="item-func">
+        <img src="https://img.icons8.com/clouds/500/database.png" alt="Consulta de dados">
+        <div class="card">Consulta de dados</div>
+      </div>
+  
+      <div class="item-func">
+        <img src="https://img.icons8.com/clouds/500/megaphone.png" alt="Campanhas educativas">
+        <div class="card">Campanhas educativas</div>
+      </div>
+  
+      <div class="item-func">
+        <img src="https://img.icons8.com/clouds/500/handshake.png" alt="Contato com órgãos parceiros">
+        <div class="card">Contato com órgãos parceiros</div>
+      </div>
+    </div>
+
   </section>
+
 
   <section id="contato" class="formulario">
     <h2>Participe do projeto</h2>
@@ -142,10 +238,19 @@
       <input type="text" placeholder="Cidade">
       <button class="botao">Quero participar</button>
     </form>
+    <section id="publico">
+      <h2" style="font-size: 30px; font-family: Arial, sans-serif;">Público-Alvo</h2>
+      <ul>
+        <li style="font-size: 25px;">Moradores de áreas com saneamento precário</li>
+        <li style="font-size: 25px;">Alunos e professores de escolas públicas</li>
+        <li style="font-size: 25px;">ONGs e órgãos governamentais</li>
+      </ul>
+    </section>
   </section>
 
   <footer>
-    <p>Contato: contato@aguaparatodos.org | Instagram: @aguaparatodos</p>
+    <p>Contato: <a href="https://mail.google.com/mail/?view=cm&to=contato@aguaparatodos.com" target="_blank">contato@aguaparatodos.org</a>  || Instagram:<a href="https://instagram.com/aguaparatodos" target="_blank">@aguaparatodos</a></p>
   </footer>
 </body>
 </html>
+
